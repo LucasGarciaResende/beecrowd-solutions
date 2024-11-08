@@ -1,10 +1,6 @@
-n_cases = int(input())
-n_ricardo, n_vincent = 0, 0
-buffer = 0
-for case in range(0, n_cases):
-    n_ricardo, n_vincent = map(int, input().split())
-    while (n_ricardo % n_vincent) != 0:
-        buffer = n_ricardo % n_vincent
-        n_ricardo = n_vincent
-        n_vincent = buffer
-    print(n_vincent)
+num = int(input())
+if num % 2 == 0:
+    num += 1
+for impares in range(0, 6):
+    print(num)
+    num += 2
